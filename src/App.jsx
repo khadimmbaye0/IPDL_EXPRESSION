@@ -104,7 +104,7 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
-      window.location.href = 'http://localhost:5173/';
+      window.location.href = 'https://ipdl-auth.vercel.app/';
     }
   }, []);
 
@@ -199,7 +199,7 @@ function App() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     // Redirige vers la page de connexion (AUTHENTIFICATION)
-    window.location.href = 'http://localhost:5173/'; // Mets ici l'URL de ton app d'authentification
+    window.location.href = 'https://ipdl-auth.vercel.app/'; // Mets ici l'URL de ton app d'authentification
   };
 
   return (
